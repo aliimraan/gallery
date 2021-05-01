@@ -45,14 +45,7 @@ If the installation was successful, you should be able to run the following comm
     $npm start
     
  ##Install Backend (node & express)
-
-https://user-images.githubusercontent.com/45514715/116792873-0600a080-aae1-11eb-843a-5d9dd3c91197.mp4
-
-
-https://user-images.githubusercontent.com/45514715/116792874-06993700-aae1-11eb-88b7-4f6621f7d526.mp4
-
-
- 
+    
      $ npm i
      $ npm i -g nodemon
      $ cd client 
