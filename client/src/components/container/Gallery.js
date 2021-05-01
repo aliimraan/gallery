@@ -3,7 +3,6 @@ import { Container } from 'react-bootstrap'
 import Dashboard from '../layout/Dashboard'
 import Sidebar from '../UI/sidebar/Sidebar'
 import ImagesGallery from './imagesGallery/ImagesGallery'
-import {FaHome} from "react-icons/fa"
 
 function Gallery() {
 

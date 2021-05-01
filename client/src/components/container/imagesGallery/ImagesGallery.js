@@ -19,7 +19,7 @@ function ImagesGallery() {
 
     return (
         <div className="custom_card_area">
-            <CardUI records={records}/>
+            <CardUI records={records}/> {/* rendering card ui*/ }
         </div>
     )
 }

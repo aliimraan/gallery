@@ -17,7 +17,7 @@ exports.signup=(req,res)=>{
         })
 
         newUsersModel.save().then(data=>{
-           return res.status(201).json({'msg':'account creacted successfully'})
+           return res.status(201).json({'msg':'Account creacted successfully'})
         }).catch(err=>{
             console.log(err)
             return res.status(500).json({err,'msg':'cradentials already in use'})
@@ -40,7 +40,7 @@ exports.signin=(req,res)=>{
                     
                     const user={_id,userName,email}
                     const token=jwt.sign({_id:data[0]._id,role:data[0].role},process.env.JWT_AUTH)
-                     res.status(200).json({token,user,'msg':'you are logged in'})
+                     res.status(200).json({token,user,'msg':'You are logged in'})
                 }else{
                     return res.status(400).json({'msg':'wrong password'})
                 }

@@ -70,16 +70,16 @@ function CardUI({records}) {
       return el[0].map((item,index)=>{
         return (
           <Card style={{ width: '18rem' }} key={index}>
-        <Card.Img variant="top" src={`http://localhost:5000/${item.gallaryPictures}`} />
-        <Card.Body>
-          <Card.Text>
-            <div className="custom_icons_area">
-            <Button variant="primary" onClick={()=>handleShow(item._id)}>Edit</Button>
-            <Button variant="danger" onClick={()=>deleteHandler(item._id)}>Delete</Button>
-            </div>
-          </Card.Text>
-        </Card.Body>
-      </Card>
+            <Card.Img variant="top" src={`http://localhost:5000/${item.gallaryPictures}`} />
+              <Card.Body>
+                <Card.Text>
+                  <div className="custom_icons_area">
+                  <Button variant="primary" onClick={()=>handleShow(item._id)}>Edit</Button>
+                  <Button variant="danger" onClick={()=>deleteHandler(item._id)}>Delete</Button>
+                  </div>
+                </Card.Text>
+              </Card.Body>
+          </Card>
         )
       })
     }
@@ -98,7 +98,7 @@ function CardUI({records}) {
       <Modal.Body>
         <form onSubmit={(e)=>submitHandler(e)}>
           <input type="file" onChange={(e)=>setImage(e.target.files[0])}/>
-          <button type="submit">send</button>
+          <button className= "btn btn-primary" type="submit">send</button>
         </form>
       </Modal.Body>
       <Modal.Footer>
