@@ -1,0 +1,88 @@
+.uploads{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+}
+.uploads form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+    flex-direction: column;
+    gap: 20px;
+}
+.uploads form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 60px;
+    color: #00303c;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid #00303c;
+    transition: 0.5s ease;
+}
+.uploads form button:hover{
+    background: #00303c;
+    color:white;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 8px 60px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border-radius: 50px;
+    background: #213366;
+    transition: 0.5s ease;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #00303c;
+    color: white;
+}
+.inputfile + label {
+	cursor: pointer;
+}
+.uploads .table_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.uploads .table_area.active{
+    display: none;
+}
+.uploads .table_area .table{
+    width: 100%;
+}
+.uploads .table_area .table Table{
+    width: 100%;
+    background: #000;
+    color: red;
+    font-weight: 800;
+}
+.uploads .loader.active{
+   display: none;
+}

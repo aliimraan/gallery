@@ -1,7 +1,7 @@
 const mongoose=require('mongoose')
 
 const imagesScheme=new mongoose.Schema({
-    imageName:{type:String,required:true}
+    gallaryPictures:{type:String}
 },{timestamps:true})
 
 const imagesModel=mongoose.model('images',imagesScheme)

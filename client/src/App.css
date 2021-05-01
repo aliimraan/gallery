@@ -1,38 +1,252 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.account{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background:#f3f4f6;
+}
+.account .account_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90vh;
+  background:#ffffff;
+  border-radius: 20px;
+}
+.account .account_box .box1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+}
+.account .account_box .box1 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.account .account_box .box1 button{
+  top: 70%;
+  left: 53%;
+  position: absolute;
+  transform: translate(-70%,-53%);
+  padding: 0.5rem 2rem;
+  border: none;
+  outline: none;
+  background: black;
+  border-radius: 10px;
+  color:white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account .account_box .box2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+}
+.account .account_box .box2 .form_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.account .account_box .box2 .form_area .heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.3rem;
+  text-transform: capitalize;
+  font-weight: 800;
+  color: #2a2b46;
+  margin: 30px 0;
+}
+.account .account_box .box2 .form_area form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height:100%;
+}
+.account .account_box .box2 .form_area form .inputs_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height:100%;
+  flex-wrap: wrap;
+  gap: 0 10px;
+ 
+}
+.account .account_box .box2 .form_area form input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  text-transform: capitalize;
+}
+.account .account_box .box2 .form_area form input[type='date']{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  text-transform: capitalize;
+}
+.account .account_box .box2 .form_area form button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 15px;
+  margin: 20px 0 0 0;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #000;
+  color:white;
+}
+.personal_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background: #1b1b41;
+  box-shadow: 0 0 10px #775648;
+}
+.personal_area .heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #dedee4;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.personal_area .card{
+  width: '28rem';
+  background:'#20204b';
+}
+.personal_area .list{
+  background:'#20204b';
+}
+.personal_area span{
+   font-size: 1.2rem;
+   font-weight: 700;
+   padding: 0 20px;
+   color: #44447e;
+   text-transform: capitalize;
+}
+.personal_area .link{
+   font-size: 1.2rem;
+   font-weight: 700;
+   padding: 0 20px;
+   color: white;
+   background:#6565fd;  
+   padding: 15px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-transform: capitalize;
+   text-decoration: none;
+}
+.singleDetails{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+}
+
+.all_users{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background: #1b1b41;
+  min-height: 100vh;
+  height: auto;
+  padding: 20px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.all_users .table_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  flex-direction: column;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.all_users .table_area h4{
+ font-size: 3rem;
+ font-weight: 800;
+ text-transform: uppercase;
+ padding: 20px 10px;
+ color: white;
+}
+@media (max-width:1215px){
+  .account .account_box .box2 .form_area form .inputs_area{
+    width: 100%;
+     display: flex;
+      justify-content: center;
+      align-items: center;
+  
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width:1180px){
+  .personal_area .box_area .details_area{
+    flex-direction: column;
+  }
+}
+@media (max-width:980px){
+
+  .account .account_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    background:#ffffff;
+    border-radius: 20px;
+  }
+  .account .account_box .box1{
+    width: 100%;
+   }
+  .account .account_box .box2{
+    width: 100%;
+   }
+   .personal_area .box_area{
+  
+    width: 100%;
+
+  }
+  .personal_area .box_area .details_area h5{
+    width: 100%; 
+   
   }
 }
